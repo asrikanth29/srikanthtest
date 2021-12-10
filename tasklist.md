@@ -8,7 +8,16 @@
     - 6 with Gitlab CI (app 11-16)
     - 9 with AWS CI/CD (app 17-25)
 ## initial setups
-  - two jenkins server on-prem VMs one primary , second as secondary backup call them as ` jenkins1, jenkins2 `
-  - setup nexus 
+  - two jenkins server on-prem VMs one primary , second as secondary backup (do backups wkly)   call them as ` jenkins1, jenkins2 `
+      - install plugins slack,maven,nexus,maven,ansible,terraform
+  - setup nexus on-prem VM, integrate it with jenkins server
+  - take a on-prem jump server for non-prod environments
+      - install vagrant
+          - prepare vagrant files for all apps QA,UAT,LT environments
+      - install ansible on jump server , maintain inventary maintain QA,UAT,LT environments
+  - setup drone CI,integrate with nexus
+  - 
 ## let setup for app1-4 ( java based non containerised )
-
+    ### APP1
+      - get app git repo
+      - setup jun
