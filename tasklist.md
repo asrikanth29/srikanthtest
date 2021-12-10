@@ -16,8 +16,22 @@
           - prepare vagrant files for all apps QA,UAT,LT environments
       - install ansible on jump server , maintain inventary maintain QA,UAT,LT environments
   - setup drone CI,integrate with nexus
+  - setup zobbix on on-prem VM for monitoring 
   - 
 ## let setup for app1-4 ( java based non containerised )
-   ### APP1
+ ### APP1
+ - CI implementaion
    - get app git repo
-   - setup jun
+   - setup jenkins job 
+        - link git repo --> triger --> bild with maven --> save artifacts in nexus
+   - check artifact in nexus repo
+ - Non prod Deployment
+    - QA
+      - setup environment using vagrant file
+      - create a play book to config and deploy
+      - config and deploy using ansible-playbook
+    - UAT
+      - follow similar steps as QA
+    - LT
+      - follow similar steps as QA
+  - production deployment
