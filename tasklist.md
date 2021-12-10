@@ -19,19 +19,29 @@
   - setup zobbix on on-prem VM for monitoring 
   - 
 ## let setup for app1-4 ( java based non containerised )
- ### APP1
+### APP1
  - CI implementaion
    - get app git repo
    - setup jenkins job 
         - link git repo --> triger --> bild with maven --> save artifacts in nexus
    - check artifact in nexus repo
- - Non prod Deployment
+ - Non prod Deployment on-prem
     - QA
       - setup environment using vagrant file
-      - create a play book to config and deploy
+      - create a play book to config and deploy (include monitoring agents)
       - config and deploy using ansible-playbook
-    - UAT
+    - SIT
       - follow similar steps as QA
     - LT
       - follow similar steps as QA
-  - production deployment
+  - production deployment on aws
+    - manual deployment
+    - prepare terraform template for aws infrastructure
+    - test terraform template with QUALI sandbox environment
+    - create production infra using terraform template 
+    - create ansible playbook for configuring and deployoing 
+    - deploy using ansible
+### APP2-APP4
+  - similar steps as app1
+## let setup for app5-7 ( php based non containerised)
+    - similar steps as java applications
