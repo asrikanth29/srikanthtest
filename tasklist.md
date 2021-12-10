@@ -68,4 +68,12 @@
     - create production infra using terraform template 
     - create ansible playbook for configuring and deployoing 
     - deploy using ansible
-      
+  
+
+## let setup for app11-25 ( containerised applications )
+  ### containers
+      - 15 apps, all are api services (total 95 containers)
+          - app11-app20 , each are running on 3 containers ( 30 containers)
+          - app21,22, each are running on 10 containers ( 20 containers)
+          - app23-25, each are running on 15 containers (45 containers)
+
