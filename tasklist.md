@@ -19,5 +19,5 @@
   - 
 ## let setup for app1-4 ( java based non containerised )
    ### APP1
-      - get app git repo
-      - setup jun
+   - get app git repo
+   - setup jun
