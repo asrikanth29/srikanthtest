@@ -44,4 +44,4 @@
 ### APP2-APP4
   - similar steps as app1
 ## let setup for app5-7 ( php based non containerised)
-    - similar steps as java applications
+  - similar steps as java applications
