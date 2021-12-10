@@ -18,8 +18,7 @@
             - windows VM's for .NET apps
       - install ansible on jump server , maintain inventary maintain QA,UAT,LT environments
   - setup drone CI,integrate with nexus
-  - setup zobbix on on-prem VM for monitoring 
-  - 
+  - setup zobbix on on-prem VM for monitoring.
 ## let setup for app1-4 ( java based non containerised )
 ### APP1
  - CI implementaion
@@ -69,3 +68,4 @@
     - create production infra using terraform template 
     - create ansible playbook for configuring and deployoing 
     - deploy using ansible
+      
