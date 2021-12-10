@@ -8,7 +8,7 @@
     - 6 with Gitlab CI (app 11-16)
     - 9 with AWS CI/CD (app 17-25)
 ## initial setups
-  - two jenkins server on aws ec2 one primary , second as secondary backup 
-
+  - two jenkins server on-prem VMs one primary , second as secondary backup call them as ` jenkins1, jenkins2 `
+  - setup nexus 
 ## let setup for app1-4 ( java based non containerised )
 
