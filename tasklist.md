@@ -18,6 +18,6 @@
   - setup drone CI,integrate with nexus
   - 
 ## let setup for app1-4 ( java based non containerised )
-    ### APP1
+   ### APP1
       - get app git repo
       - setup jun
